@@ -1,0 +1,16 @@
+<resources>
+  <string name="app_name">My App</string>
+  <string name="hello_world">This is my first application! Layout included</string>
+    <string name="say_bye">Say Bye!</string>
+  <string name="bye">Saved Thanks</string>
+    <string name="btn_cancel">Cancel</string>
+  <string name="btn_save">Save</string>
+  <string name="btn_ok">Okey</string>
+  <string name="btn_center">Center</string>
+  <string name="btn_north">North</string>
+  <string name="btn_east">East</string>
+  <string name="btn_south">South</string>
+  <string name="btn_west">West</string>
+  <string name="enterName">Enter Name</string>
+  <string name="enter_Gender">Enter Gender</string>
+</resources>
