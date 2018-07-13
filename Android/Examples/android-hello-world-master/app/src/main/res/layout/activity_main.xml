@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <EditText
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enterName"
+        android:id="@+id/editFullName"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end">
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_cancel"/>
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_save"
+            />
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#0f0"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <EditText
+                android:inputType="text"
+                android:hint="@string/enter_Gender"
+                android:id="@+id/edit_relative_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/btn_ok"
+                android:layout_below="@id/edit_relative_edit"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:text="@string/btn_ok"
+                android:layout_alignParentRight="true" />
+            <Button
+                android:id="@+id/btn_can"
+                android:layout_below="@id/edit_relative_edit"
+                android:layout_toStartOf="@id/btn_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignWithParentIfMissing="true"
+                android:text="@string/btn_cancel"
+                android:layout_toLeftOf="@id/btn_ok" />
+            <Button
+                android:id="@+id/greeting"
+                android:layout_below="@id/edit_relative_edit"
+                android:layout_toStartOf="@id/btn_can"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignWithParentIfMissing="true"
+                android:text="@string/btn_cancel"
+                android:layout_toLeftOf="@id/btn_can" />
+            <TextView
+                android:id="@+id/center_text"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_center"
+                android:textSize="30pt"
+                android:background="#080"/>
+            <TextView
+                android:id="@+id/north_text"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/center_text"
+                android:layout_alignStart="@id/center_text"
+                android:text="@string/btn_north"
+                android:background="#08c"
+                android:layout_alignLeft="@id/center_text" />
+            <TextView
+                android:id="@+id/east_text"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/center_text"
+                android:layout_alignTop="@id/center_text"
+                android:text="@string/btn_east"
+                android:background="#08c"
+                android:layout_toRightOf="@+id/center_text" />
+            <TextView
+                android:id="@+id/south_text"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/center_text"
+                android:layout_alignEnd="@id/center_text"
+                android:text="@string/btn_south"
+                android:background="#08c"
+                android:layout_alignRight="@id/center_text" />
+            <TextView
+                android:id="@+id/west_text"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@+id/center_text"
+                android:layout_alignBottom="@id/center_text"
+                android:text="@string/btn_west"
+                android:background="#08c"
+                android:layout_toLeftOf="@+id/center_text" />
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>
